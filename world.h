@@ -76,7 +76,7 @@ inline void World::simulate(int t, int i, int j)
     bool alive = get(t-1, i, j);
     if (alive && (n == 2 || n == 3))
         set(t, i, j, true);
-    else if (!alive && (n == 3))
+    else if (!alive && (n == 6 || n == 3))
         set(t, i, j, true);
     else
         set(t, i, j, false);
